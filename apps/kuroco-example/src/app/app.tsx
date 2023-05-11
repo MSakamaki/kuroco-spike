@@ -1,21 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Suspense } from 'react';
+import PageTow from '../components/page-tow/page-tow';
 import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="kuroco-example" />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
       <div role="navigation">
         <ul>
           <li>
@@ -41,6 +33,9 @@ export function App() {
           element={
             <div>
               <Link to="/">Click here to go back to root page.</Link>
+              <Suspense fallback={<span>Loading</span>}>
+                <PageTow />
+              </Suspense>
             </div>
           }
         />
