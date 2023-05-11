@@ -3,18 +3,9 @@
     {
       "source": "**",
       "destination": "/index.html"
-    },
-    {
-      "source": ".*",
-      "destination": "/index.html"
     }
   ],
-  "redirects": [
-    {
-      "source": "^/articles2/([^/].+?)/",
-      "destination": "status:302:/temp_articles2/$1/"
-    }
-  ],
+  "redirects": [],
   "redirects_by_ie": [],
   "basic": [],
   "ip_restrictions": [],
