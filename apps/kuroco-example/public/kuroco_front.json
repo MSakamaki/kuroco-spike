@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    {
+      "source": ".*",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "^/articles2/([^/].+?)/",
+      "destination": "status:302:/temp_articles2/$1/"
+    }
+  ],
+  "redirects_by_ie": [],
+  "basic": [],
+  "ip_restrictions": [],
+  "ip_restricted_maintenance": [],
+  "stale_while_revalidate": "86400",
+  "error_page": {},
+  "inject_data": []
+}
